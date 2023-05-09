@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Calculator</title>
+</head>
+
+<body>
+
+  <div class="intro">
+    <h1 class="logo-header">
+      <span class="logo"><b>Life</b></span><span class="logo">Invader.</span><br>
+      <span class="logo2">it's not technology, &nbsp;</span><span class="logo2">it's your life</span>
+    </h1>
+  </div>
+
+  <header>
+    <h4>LifeInvader.</h4>
+  </header>
+
+  <div id="fade" class="hide"></div>
+  <div id="modal" class="hide">
+    <div class="modal-header">
+      <h2>Relatório</h2>
+      <button id="close-modal">Fechar</button>
+    </div>
+    <div class="modal-body">
+      <p>Copie e cole no BC Ilegal - #registro-lavagem</p>
+      <span id="nome-relatorio">Nome:</span><br>
+      <span id="dinheiro-sujo-relatorio">Dinheiro sujo:</span><br>
+      <span id="limpo-cliente-relatorio">Dinheiro limpo para o cliente:</span><br>
+      <span id="limpo-lucro-relatorio">Dinheiro limpo para nós:</span><br>
+      <span id="porcentagem-relatorio">Porcentagem:</span>
+    </div>
+  </div>
+
+  <main>
+    <section class="container">
+      <div class="calculator">
+        <div class="text">
+          <h1>LifeInvader</h1>
+          <h5>Social Self Respect</h5>
+        </div>
+
+        <div class="infos">
+          <label for="valor">Dinheiro sujo:</label>
+          <input type="text" id="valor" name="valor">
+          <label for="porcentagem">Porcentagem:</label>
+          <input type="number" id="porcentagem" name="porcentagem" value="15">
+          <button type="button" onclick="calcular(); gerarRelatorio();" id="open-modal">Calcular</button>
+          <label for="solventes">Quantidade de solventes:</label>
+          <input type="text" id="solventes" name="solventes" disabled>
+          <label for="papel">Quantidade de papel moeda:</label>
+          <span id="qtdPapelMoeda"></span>
+          <span id="valorPapelMoeda"></span><br><br>
+          <label for="cliente">Dinheiro limpo para o cliente:</label>
+          <input type="text" id="cliente" name="cliente" disabled>
+          <label for="lucro">Dinheiro limpo para nós:</label>
+          <input type="text" id="lucro" name="lucro" disabled>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="modal.js"></script>
+  <script src="app.js"></script>
+  <script src="script.js"></script>
+
+</body>
+
+</html>
